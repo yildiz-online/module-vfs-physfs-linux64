@@ -3,9 +3,9 @@
 cmake . \
 -DCMAKE_MODULE_PATH=. \
 -DCMAKE_BUILD_TYPE=Release \
--DPHYSFS_INCLUDE_DIR="physicsfs/win64/include" \
--DPHYSFS_LIBRARY="physicsfs/win64/lib/libphysfs.a" \
--DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
+-DPHYSFS_INCLUDE_DIR="physicsfs/linux64/include" \
+-DPHYSFS_LIBRARY="physicsfs/linux64/lib/libphysfs.a" \
+-DLIBRARY_OUTPUT_PATH="../../../../target/classes/linux64" \
 -G "Unix Makefiles"
 
 make
