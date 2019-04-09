@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+cmake . \
+-DCMAKE_MODULE_PATH=. \
+-DCMAKE_BUILD_TYPE=Release \
+-DPHYSFS_INCLUDE_DIR="physicsfs/win64/include" \
+-DPHYSFS_LIBRARY="physicsfs/win64/lib/libphysfs.a" \
+-DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
+-G "Unix Makefiles"
+
+make
+
+mkdir ../../../../target/classes/linux64/include
+cp ../../../../src/main/includes/yz_physfs_Wrapper.hpp ../../../../target/classes/linux64/include
+cp ../../../../src/main/includes/yz_physfs_File.hpp ../../../../target/classes/linux64/include
+cp ../../../../src/main/includes/yz_physfs_Container.hpp ../../../../target/classes/linux64/include
+cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../target/classes/linux64/include
+cp physicsfs/win64/include/physfs.h ../../../../target/classes/linux64/include
+
+rm -R CMakeFiles
+rm CMakeCache.txt
+rm cmake_install.cmake
+rm Makefile
+rm -r physicsfs
+rm -r java
