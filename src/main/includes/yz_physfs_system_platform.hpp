@@ -22,3 +22,4 @@
  */
 
 #define _YZExport
+#define _YZ_SINT64 long int
