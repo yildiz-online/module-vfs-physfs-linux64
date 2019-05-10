@@ -15,7 +15,8 @@ cp ../../../../src/main/includes/yz_physfs_Wrapper.hpp ../../../../target/classe
 cp ../../../../src/main/includes/yz_physfs_File.hpp ../../../../target/classes/linux64/include
 cp ../../../../src/main/includes/yz_physfs_Container.hpp ../../../../target/classes/linux64/include
 cp ../../../../src/main/includes/yz_physfs_ArchiveTypeInfo.hpp ../../../../target/classes/linux64/include
-cp physicsfs/win64/include/physfs.h ../../../../target/classes/linux64/include
+cp ../../../../src/main/includes/yz_physfs_system_platform.hpp ../../../../target/classes/linux64/include
+cp physicsfs/linux64/include/physfs.h ../../../../target/classes/linux64/include
 
 rm -R CMakeFiles
 rm CMakeCache.txt
