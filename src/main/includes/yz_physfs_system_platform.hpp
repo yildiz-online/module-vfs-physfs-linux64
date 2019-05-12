@@ -21,5 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  SOFTWARE.
  */
 
+ /**
+ * @author Grégory Van den Borre
+ */
+
 #define _YZExport
 #define _YZ_SINT64 long int
